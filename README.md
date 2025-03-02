@@ -108,22 +108,21 @@ This will compile the `message_slot.ko` kernel module and the user-space program
 2. **Create message slot files**:
 
    ```bash
-sudo mknod /dev/slot0 c 235 0
-sudo mknod /dev/slot1 c 235 1
+   sudo mknod /dev/slot0 c 235 0
+   sudo mknod /dev/slot1 c 235 1
 
 3. **Set permissions:**
 
-   ```bash
-sudo chmod 666 /dev/slot0 /dev/slot1
+   ```bash sudo chmod 666 /dev/slot0 /dev/slot1
 
 
 4. **Send a message:**
    ```bash
-./message_sender /dev/slot0 1 "Hello, Slot 1"
+   ./message_sender /dev/slot0 1 "Hello, Slot 1"
 
 5. **Read the message:**
    ```bash
-./message_reader /dev/slot0 1
+   ./message_reader /dev/slot0 1
 
 ## Conclusion
 This project provides a practical implementation of an IPC mechanism using message slots. It demonstrates how kernel modules can manage device files and inter-process communication in a Linux environment.
