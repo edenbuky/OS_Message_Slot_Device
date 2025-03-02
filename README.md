@@ -104,14 +104,12 @@ This will compile the `message_slot.ko` kernel module and the user-space program
 
    ```bash
    sudo insmod message_slot.ko
-```
 
 2. **Create message slot files**:
 
    ```bash
 sudo mknod /dev/slot0 c 235 0
 sudo mknod /dev/slot1 c 235 1
-   ```
 
 3. **Set permissions:**
 
