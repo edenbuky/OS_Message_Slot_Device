@@ -113,7 +113,8 @@ This will compile the `message_slot.ko` kernel module and the user-space program
 
 3. **Set permissions:**
 
-   ```bash sudo chmod 666 /dev/slot0 /dev/slot1
+   ```bash
+   sudo chmod 666 /dev/slot0 /dev/slot1
 
 
 4. **Send a message:**
